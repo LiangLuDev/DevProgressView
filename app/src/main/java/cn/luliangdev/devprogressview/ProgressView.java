@@ -9,6 +9,7 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.Animation;
 
 /**
  * ProgressView
@@ -49,7 +50,9 @@ public class ProgressView extends View {
     private void initView() {
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         animator = new ObjectAnimator();
+        //设置动画属性
         animator.setPropertyName("progress");
+        //设置执行动画的View
         animator.setTarget(this);
     }
 
@@ -110,10 +113,21 @@ public class ProgressView extends View {
     }
 
 
+    /**
+     * 返回属性动画实例，可用于动画进度监听做后续操作
+     * @return
+     */
+    public ObjectAnimator getAnimator() {
+        return animator;
+    }
+
     public void startAnim() {
         if (animator.isRunning()) animator.end();
+        //设置进度数组，  0 - max
         animator.setFloatValues(0, progress);
+        //设置动画时间
         animator.setDuration(duration);
+        //动画开启
         animator.start();
     }
 

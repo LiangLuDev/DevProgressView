@@ -1,5 +1,6 @@
 package cn.luliangdev.devprogressview;
 
+import android.animation.Animator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,9 +34,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 progressview1.startAnim();
-                progressview2.startAnim();
+                progressview1.getAnimator().addListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        progressview2.startAnim();
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animation) {
+
+                    }
+                });
+
             }
         });
+
+
 
     }
 }
