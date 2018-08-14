@@ -21,9 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         progressview1 = findViewById(R.id.progressview1);
+        //设置颜色
         progressview1.setColor(getResources().getColor(R.color.colorAccent));
+        //设置圆角   默认无圆角
         progressview1.setRadius(6);
+        //设置进度条长度    默认px
         progressview1.setProgress(500);
+        //设置动画时间
+        progressview1.setDuration(500);
+
 
         progressview2 = findViewById(R.id.progressview2);
         progressview2.setColor(getResources().getColor(R.color.colorPrimary));

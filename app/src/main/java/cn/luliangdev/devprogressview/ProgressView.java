@@ -121,6 +121,7 @@ public class ProgressView extends View {
         return animator;
     }
 
+    //
     public void startAnim() {
         if (animator.isRunning()) animator.end();
         //设置进度数组，  0 - max
