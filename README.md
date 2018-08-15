@@ -1,4 +1,4 @@
-# 自定义`ProdressView`-进度条动画
+# 自定义`ProgressView`-进度条动画
 
 
 > 前两天公司需求，实现进度条动画，本来想在网上找找有没有类似的拿来用，想偷懒都不行。就简单自定义`View`进度条动画。实现很简单。
@@ -15,7 +15,7 @@
 
 
 ### 代码实现
-> 动画效果很简单，使用`ObjectAnimator`属性动画来实现，这个官方提供一些Api使用，具体可以查看[官方文档](https://developer.android.com/reference/android/animation/ObjectAnimator)。如果以后需要实现更复杂的动画，可以以此为例进行自定义。这里我会对基础自定义`View`动画实现简单的说明，具体说明在代码注释。如果你们需要的效果跟我的类似，你可以直接把[`ProdressView`](https://github.com/LiangLuDev/DevProgressView/blob/master/app/src/main/java/cn/luliangdev/devprogressview/ProgressView.java)文件拷贝下来使用，需要的属性不够用的话可以直接在里面修改添加。
+> 动画效果很简单，使用`ObjectAnimator`属性动画来实现，这个官方提供一些Api使用，具体可以查看[官方文档](https://developer.android.com/reference/android/animation/ObjectAnimator)。如果以后需要实现更复杂的动画，可以以此为例进行自定义。这里我会对基础自定义`View`动画实现简单的说明，具体说明在代码注释。如果你们需要的效果跟我的类似，你可以直接把[`ProgressView`](https://github.com/LiangLuDev/DevProgressView/blob/master/app/src/main/java/cn/luliangdev/devprogressview/ProgressView.java)文件拷贝下来使用，需要的属性不够用的话可以直接在里面修改添加。
 
 
 #### 看代码才是王道
