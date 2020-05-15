@@ -7,11 +7,11 @@
 
 - 使用在公司项目效果预览
 
-![xz-progressview](http://pb8sdvqnp.bkt.clouddn.com/xz_progressview.gif)
+![xz-progressview](http://static.luliangdev.cn/xz_progressview.gif)
 
 - 简洁效果预览
 
-![progressview](http://pb8sdvqnp.bkt.clouddn.com/progressview.gif)
+![progressview](http://static.luliangdev.cn/progressview.gif)
 
 
 ### 代码实现
